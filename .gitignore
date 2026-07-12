@@ -1,0 +1,37 @@
+# Environment and secrets
+.env
+.env.*
+
+# Virtual environment
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Debug/output folders
+posts_debug_reports/
+sample_debug_reports/
+
+# Local/editor files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Generated outputs
+outputs/results/*
+outputs/debug_reports/*
+!outputs/results/.gitkeep
+!outputs/debug_reports/.gitkeep
+
+# Large/local data folders managed separately
+data/raw/*
+data/processed/*
+data/evaluation/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/evaluation/.gitkeep

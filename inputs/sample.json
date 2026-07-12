@@ -1,0 +1,7 @@
+{
+  "posts": [
+    {
+      "post": "Filebeat and other beats can directly send the message to ES but there are addition advantages while using logstash.\n\nyou can use filters in logstash based on inputs.\nIt support Grok filter and other filter plugins like csv , xml and many more.\nIt supports multiple codecs\nyou can use logstash as single point to control all pipelines\nlogstash can be monitored via Kibana GUI.\nLogstash management is easy and can be performed via Kibana GUI.\nFilebeat only support files as input but logstash support large array on inputs type"
+    }
+  ]
+}
