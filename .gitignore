@@ -35,3 +35,7 @@ data/evaluation/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 !data/evaluation/.gitkeep
+/Posts.csv
+/posts.json
+/posts_result_debug.json
+/coref_evaluation.csv
