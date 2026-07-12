@@ -79,3 +79,9 @@ data/evaluation/*
 /usability-result.json
 /comparison_results.csv
 /comparison_summary.csv
+/input.json
+/output.json
+/test-new-format.json
+/test-new-prompt.json
+/neutral-performance.txt
+/neutral-usability.txt

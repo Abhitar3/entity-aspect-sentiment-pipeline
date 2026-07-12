@@ -1,0 +1,5 @@
+outs:
+- md5: 00d702512cfe87902eb90f10a7bb714b
+  size: 363
+  hash: md5
+  path: test-new-prompt.json

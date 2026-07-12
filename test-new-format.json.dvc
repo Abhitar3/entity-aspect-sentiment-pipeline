@@ -1,0 +1,5 @@
+outs:
+- md5: 0a38e86d3276e70ad0092adcdd249eff
+  size: 369
+  hash: md5
+  path: test-new-format.json
