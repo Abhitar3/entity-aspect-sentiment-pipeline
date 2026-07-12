@@ -48,3 +48,13 @@ data/evaluation/*
 /performance.csv
 /secondset.csv
 /sentenceswithouturl.csv
+/100-usability.json
+/documentation.json
+/neutral-performance.json
+/neutral-usability.json
+/new_usability_error_check.json
+/performance-100.json
+/secondset.json
+/sentenceswithouturl.json
+/single-sentence.json
+/usability-100.json

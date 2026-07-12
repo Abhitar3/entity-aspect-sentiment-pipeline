@@ -1,0 +1,5 @@
+outs:
+- md5: f173167fa165100748dc59a1bb206796
+  size: 2760
+  hash: md5
+  path: single-sentence.json
