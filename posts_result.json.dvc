@@ -1,0 +1,5 @@
+outs:
+- md5: 44eb1f1a635ce841e4eefabf42e72cba
+  size: 103766
+  hash: md5
+  path: posts_result.json
