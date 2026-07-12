@@ -39,3 +39,12 @@ data/evaluation/*
 /posts.json
 /posts_result_debug.json
 /coref_evaluation.csv
+/Documentation.csv
+/NewUsabilityErrorCheck.csv
+/Performance-100.xlsx
+/Usability-100.xlsx
+/Usability.csv
+/evaluation_input.csv
+/performance.csv
+/secondset.csv
+/sentenceswithouturl.csv
