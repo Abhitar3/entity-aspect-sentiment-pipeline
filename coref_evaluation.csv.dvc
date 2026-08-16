@@ -1,5 +1,0 @@
-outs:
-- md5: db85a7d2474759fd271868dda57f4dc9
-  size: 12158
-  hash: md5
-  path: coref_evaluation.csv

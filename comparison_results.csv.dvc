@@ -1,5 +1,0 @@
-outs:
-- md5: 2add4c67bee525c1e517f4ff29008781
-  size: 112470
-  hash: md5
-  path: comparison_results.csv
