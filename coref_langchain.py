@@ -25,7 +25,7 @@ COREF_PROMPT_TEMPLATE = (
     "'it', 'its', 'they', 'both', 'this', 'these', or 'those'.\n"
     "\n"
     "Your task is to decide whether this specific referring expression refers to one or more of the provided software entities.\n"
-    "Use the FULL post as context, including earlier sentences, to determine the most likely antecedent.\n"
+    "Use the FULL post as context, including earlier sentences, to decide whether the referring expression clearly refers to one or more of the provided software entities. If it is not clear which provided entity or entities it refers to, return an empty list.\n"
     "\n"
     "IMPORTANT RULES\n"
     "- Only map the referring expression to entities if the referent is clearly one of the provided software entities.\n"
@@ -75,6 +75,17 @@ GENERIC_DEMONSTRATIVE_NOUNS = {
     "frameworks",
 }
 
+ABSTRACT_DEMONSTRATIVE_NOUNS = GENERIC_DEMONSTRATIVE_NOUNS - {
+    "api",
+    "apis",
+    "tool",
+    "tools",
+    "library",
+    "libraries",
+    "framework",
+    "frameworks",
+}
+
 DUMMY_IT_PATTERNS = [
     r"\bit\s+can\s+happen\b",
     r"\bit\s+happens\b",
@@ -93,7 +104,7 @@ def should_skip_ref(sentence: str, ref: str) -> bool:
         return False
 
     if ref == "this":
-        for n in GENERIC_DEMONSTRATIVE_NOUNS:
+        for n in ABSTRACT_DEMONSTRATIVE_NOUNS:
             if re.search(rf"\b{ref}\s+{re.escape(n)}s?\b", s):
                 return True
 
@@ -101,7 +112,7 @@ def should_skip_ref(sentence: str, ref: str) -> bool:
             return True
 
     if ref in {"these", "those"}:
-        for n in GENERIC_DEMONSTRATIVE_NOUNS:
+        for n in ABSTRACT_DEMONSTRATIVE_NOUNS:
             if re.search(rf"\b{ref}\s+{re.escape(n)}s?\b", s):
                 return True
 
